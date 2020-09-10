@@ -13,12 +13,11 @@
     <script src="js/paper-full.js"></script>
 
     <script type="text/paperscript" canvas="mycanvas">
-        var path = new Path();
-        path.strokeColor = 'red';
+       var box = new Path.Circle(new Point(200, 100), 400);
+       box.fillColor = 'green';
 
-        var start = new Point(0, 100);
-        path.moveTo(start);
-        path.lineTo(start + [500, -50]);
+       var circles = new Path.Circle(new Point(140, 75), 60);
+       circles.fillColor = 'red';
     </script>
 </body>
 </html>
