@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper js</title>
+</head>
+
+<body>
+    
+    <canvas id="mycanvas"></canvas>
+
+    <script src="js/paper-full.js"></script>
+
+    <script type="text/paperscript" canvas="mycanvas">
+        var path = new Path();
+        path.strokeColor = 'red';
+
+        var start = new Point(0, 100);
+        path.moveTo(start);
+        path.lineTo(start + [500, -50]);
+    </script>
+</body>
+</html>
